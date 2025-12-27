@@ -1,3 +1,70 @@
+<style>
+  body {
+    background-color: #0d1117;
+    color: #e6edf3;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h1 {
+    color: #58a6ff;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0.5em;
+    background: linear-gradient(135deg, #58a6ff 0%, #a371f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h2 {
+    color: #58a6ff;
+    border-bottom: 2px solid #58a6ff;
+    padding-bottom: 0.3em;
+    margin-top: 2em;
+  }
+  p, li {
+    color: #8b949e;
+  }
+  strong {
+    color: #e6edf3;
+  }
+  a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  code {
+    background-color: #161b22;
+    color: #e6edf3;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  blockquote {
+    border-left: 4px solid #58a6ff;
+    background-color: #161b22;
+    padding: 1em;
+    margin: 1em 0;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #30363d;
+    margin: 2em 0;
+  }
+  @media (max-width: 768px) {
+    body { padding: 15px; font-size: 16px; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+  }
+  @media (max-width: 480px) {
+    body { padding: 10px; font-size: 14px; }
+    h1 { font-size: 1.75em; }
+    h2 { font-size: 1.25em; }
+  }
+</style>
+
 # Cartis2D
 
 **A lightweight 2D level editor built for clarity, speed, and control.**
