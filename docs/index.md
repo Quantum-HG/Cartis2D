@@ -110,7 +110,7 @@
 <p class="badge">Always Free</p> <p class="badge">Open Source Python API</p> <p class="badge">Windows</p>
 
 <p align="center">
-  <img src=".../images/Cartis2D.png" alt="Cartis2D Editor" style="max-width: 100%; height: auto; border-radius: 8px; margin: 2em 0; box-shadow: 0 8px 30px rgba(63, 185, 80, 0.3);">
+  <img src="images/Cartis2D.png" alt="Cartis2D Editor" style="max-width: 100%; height: auto; border-radius: 8px; margin: 2em 0; box-shadow: 0 8px 30px rgba(63, 185, 80, 0.3);">
 </p>
 
 ---
