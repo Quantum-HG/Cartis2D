@@ -3,178 +3,181 @@
     background-color: #0d1117;
     color: #e6edf3;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    max-width: 1200px;
+    line-height: 1.7;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
   }
   h1 {
-    color: #58a6ff;
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
-    margin-bottom: 0.5em;
-    background: linear-gradient(135deg, #58a6ff 0%, #a371f7 100%);
+    margin: 0.5em 0;
+    background: linear-gradient(135deg, #3fb950 0%, #7ee787 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
   }
   h2 {
-    color: #58a6ff;
-    border-bottom: 2px solid #58a6ff;
-    padding-bottom: 0.3em;
-    margin-top: 2em;
+    color: #3fb950;
+    border-bottom: 3px solid #26a641;
+    padding-bottom: 0.4em;
+    margin: 2.5em 0 1em;
+    font-size: 1.8em;
   }
-  p, li {
+  h3 {
+    color: #7ee787;
+    margin: 1.5em 0 0.8em;
+  }
+  p {
     color: #8b949e;
+    font-size: 1.05em;
+    margin: 0.8em 0;
   }
   strong {
-    color: #e6edf3;
+    color: #3fb950;
+    font-weight: 600;
+  }
+  ul {
+    padding-left: 1.5em;
+  }
+  li {
+    color: #8b949e;
+    margin: 0.5em 0;
+    font-size: 1.05em;
+  }
+  li::marker {
+    color: #3fb950;
   }
   a {
-    color: #58a6ff;
+    color: #3fb950;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
   }
   a:hover {
-    text-decoration: underline;
-  }
-  code {
-    background-color: #161b22;
-    color: #e6edf3;
-    padding: 2px 6px;
-    border-radius: 3px;
+    border-bottom-color: #3fb950;
   }
   blockquote {
-    border-left: 4px solid #58a6ff;
+    border-left: 4px solid #3fb950;
     background-color: #161b22;
-    padding: 1em;
-    margin: 1em 0;
+    padding: 1.2em 1.5em;
+    margin: 1.5em 0;
+    border-radius: 6px;
+  }
+  blockquote p {
+    margin: 0.4em 0;
   }
   hr {
     border: none;
-    border-top: 1px solid #30363d;
-    margin: 2em 0;
+    border-top: 1px solid #21262d;
+    margin: 3em 0;
+  }
+  .badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #26a641 0%, #3fb950 100%);
+    color: #fff;
+    padding: 0.3em 0.8em;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0.5em 0;
+  }
+  .subtitle {
+    text-align: center;
+    color: #8b949e;
+    font-size: 1.2em;
+    margin-bottom: 3em;
   }
   @media (max-width: 768px) {
-    body { padding: 15px; font-size: 16px; }
-    h1 { font-size: 2em; }
+    body { padding: 30px 15px; }
+    h1 { font-size: 2.5em; }
     h2 { font-size: 1.5em; }
+    p, li { font-size: 1em; }
   }
   @media (max-width: 480px) {
-    body { padding: 10px; font-size: 14px; }
-    h1 { font-size: 1.75em; }
-    h2 { font-size: 1.25em; }
+    body { padding: 20px 12px; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.3em; }
+    .subtitle { font-size: 1em; }
   }
 </style>
 
 # Cartis2D
 
-**A lightweight 2D level editor built for clarity, speed, and control.**
+<p class="subtitle"><strong>A lightweight 2D level editor built for clarity, speed, and control.</strong></p>
 
-Cartis2D is a desktop level editor designed to make 2D map creation simple and predictable.  
-It focuses on the essentials—tiles, objects, and layout—without unnecessary complexity.
+<p class="badge">Always Free</p> <p class="badge">Open Source Python API</p> <p class="badge">Windows</p>
 
-<!-- Screenshot / GIF placeholder -->
-<!-- Add main editor preview here -->
-
----
-
-## What is Cartis2D?
-
-Cartis2D is a standalone level editor for 2D games.
-
-The editor is distributed as a pre-built desktop application and is **always free to use**.
-
-While the editor itself is closed source, the **Python interface used to load Cartis2D maps in Pygame projects is open source**, ensuring transparency, flexibility, and easy integration.
+<p align="center">
+  <img src="images/Cartis2d.png" alt="Cartis2D Editor" style="max-width: 100%; height: auto; border-radius: 8px; margin: 2em 0; box-shadow: 0 8px 30px rgba(63, 185, 80, 0.3);">
+</p>
 
 ---
 
-## Why Cartis2D exists
+## Overview
 
-Many level editors are powerful but heavy.  
-For rapid iteration and focused workflows, this often becomes friction rather than help.
+Cartis2D is a desktop level editor for 2D games that makes map creation simple and predictable. It focuses on the essentials—tiles, objects, and layout—without unnecessary complexity.
 
-Cartis2D follows a different philosophy:
-
-- Do less, but do it well  
-- Prioritize speed and clarity  
-- Avoid forcing everything onto a grid  
-- Let developers focus on gameplay, not tooling  
+The editor is **free to use** and distributed as a pre-built application. While the editor is closed source, the **Python interface for Pygame integration is fully open source**.
 
 ---
 
-## Core Features
+## Philosophy
 
-- Tile-based level editing  
-- Auto-tiling for corners, edges, and centers  
-- Randomized tile placement from selected tile sets  
-- Object system with position and size (not grid-locked)  
-- Optional snap-to-grid for precise alignment  
-- Lightweight UI designed for fast iteration  
+> **Do less, but do it well**
 
-<!-- Feature GIFs can be added here later -->
+Many level editors are powerful but heavy—creating friction instead of helping. Cartis2D prioritizes speed, clarity, and practical workflows over feature bloat.
 
----
-
-## Objects, not just tiles
-
-Cartis2D treats **objects** as first-class elements.
-
-An object is defined by **position and size**, making it suitable for:
-
-- Enemy spawn points  
-- Player start positions  
-- Triggers and zones  
-- 2D physics rectangles  
-- Any dynamic game entity  
-
-Objects can be freely placed or snapped to the grid depending on your needs.
-
-<!-- Object system demo placeholder -->
+- Rapid iteration without unnecessary complexity
+- Flexible placement—not everything locked to a grid
+- Focus on gameplay, not fighting your tools
+- Predictable behavior over hidden magic
 
 ---
 
-## Platform & Availability
+## Features
 
-- Platform: Windows  
-- Distribution: Installer via GitHub Releases  
-- Cost: **Always Free**  
-- Status: Actively developed  
+### Tile System
+- **Auto-tiling** for corners, edges, and centers
+- **Randomized placement** from tile sets for natural variation
+- Fast, intuitive tile-based editing
 
----
+### Object System
+**Objects** are first-class elements defined by **position and size**, perfect for:
+- Enemy spawns & player start positions
+- Triggers, zones, and boundaries
+- 2D physics rectangles
+- Any dynamic game entity
 
-## Python Integration (Open Source)
+ObjPython Integration
 
-Cartis2D maps are loaded into games using a Python interface designed specifically for Pygame projects.
+Maps load into Pygame projects via an **open source Python interface**:
 
-This interface is:
-- Open source  
-- Documented  
-- Easy to integrate and extend  
-
-<!-- Link to Python interface repo goes here -->
+- Clean, documented API
+- Easy to integrate and extend
+- Transparent implementation
 
 ---
 
 ## Download
 
-The latest version of Cartis2D is available via GitHub Releases.
+Get the latest version from **[GitHub Releases](#)**
 
-**Download Cartis2D →**  
-<!-- Link to latest release -->
-
----
-
-## Development Philosophy
-
-Cartis2D is built with a strong emphasis on:
-- Finishing features instead of endlessly expanding scope  
-- Predictable behavior over hidden complexity  
-- Practical workflows over theoretical completeness  
-
-Updates focus on polish, usability, and stability rather than feature bloat.
+**Platform:** Windows • **Cost:** Free • **Status:** Actively Developed
 
 ---
 
-## License
+## Development Approach
+
+Updates focus on:
+- **Finishing** over endless scope expansion
+- **Polish and stability** over feature bloat
+- **Real-world feedback** guiding direction
+
+---
+
+*Cartis2D is actively evolving. Your feedback helps shape its future
 
 Cartis2D is **free to use**.
 
